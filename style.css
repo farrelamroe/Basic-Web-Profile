@@ -1,0 +1,143 @@
+body{
+    background-color: black;
+    background-size:cover;
+    margin:0;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+aside{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: green;
+}
+li{
+    float: left;
+}
+#profil img{
+    border-radius: 50%;
+    margin: 50px auto 50px auto;
+    width: 250px;
+}
+#profil img:hover{
+    border: 1px solid white;
+}
+#profil{
+    background-color: rgb(149, 1, 1);
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+}
+#about {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 12px;
+}
+#organisasi img{
+    width: auto;
+    height: auto;
+}
+#organisasi img:hover{
+    border: 1px solid white;
+}
+#organisasi{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 8px;
+}
+#contact img{
+    width: 50px;
+    height: 50px;
+    margin-left: 8px;
+}
+.prestasi img, .achievement img{
+    width: 200px;
+    height: 100px;
+}
+.prestasi img:hover, .achievement img:hover{
+    border: 1px solid white;
+}
+.achievement, .prestasi, #education{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 8px;
+}
+#education img{
+    height: 200px;
+}
+#education img:hover{
+    border: 1px solid white;
+}
+#skill{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#About{
+    justify-content: space-around;
+    display: flex;
+    font-size: 25px;
+    margin-top: auto;
+}
+#ugm:hover, #komatik:hover, #omahti:hover, #himakom:hover{
+    color: rgb(0,0,0);
+}
+#himakom, #omahti, #komatik, #ugm{
+    width: 100px;
+    background-color: rgb(255, 30, 86);
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin: auto;
+    border-radius: 20px;
+}
+.content1, .content2, .content3, .content4, .content5, .content6, .content7{
+    box-shadow: 6px 6px 6px 6px grey;
+    background-color: rgb(61, 0, 0);
+    padding: 20px 10px 20px 10px;
+    margin: 50px 10px 50px 10px;
+    border-radius: 20px;
+}
+@media screen and (max-width: 1000px){
+    #organisasi, #education, #skill, .prestasi, .achievement{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        align-items: center;
+    }
+    .content1, .content2, .content3, .content4, .content5, .content6, .content7{
+        margin: 10px 10px 10px 10px;
+        width: 1000px;
+    }
+    #profil{
+        width: 1000px;
+    }
+    body{
+        text-align: center;
+    }
+
+}
