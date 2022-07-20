@@ -43,6 +43,7 @@ li{
     background-color: rgb(149, 1, 1);
     border-radius: 20px;
     margin: 10px 10px 10px 10px;
+    animation: muncul 2s;
 }
 #about {
     font-family: 'Courier New', Courier, monospace;
@@ -121,23 +122,52 @@ li{
     padding: 20px 10px 20px 10px;
     margin: 50px 10px 50px 10px;
     border-radius: 20px;
+    animation: muncul 2s;
+
 }
-@media screen and (max-width: 1000px){
-    #organisasi, #education, #skill, .prestasi, .achievement{
+@media screen and (max-width: 716px){
+    .content1{
+        font-size: 12px;
+        padding: auto;
+        margin: auto;
+    }
+    .prestasi, #organisasi, .achievement, #education, #About {
         display: flex;
         flex-direction: column;
-        width: 200px;
-        align-items: center;
+        width: 100%;
+        margin: auto;
     }
-    .content1, .content2, .content3, .content4, .content5, .content6, .content7{
-        margin: 10px 10px 10px 10px;
-        width: 1000px;
-    }
-    #profil{
-        width: 1000px;
-    }
-    body{
+    img{
+        max-width: 75%;
+        font-size: small;
         text-align: center;
     }
+}
+@media (min-width: 716px) and (max-width: 1000px){
+    .content1{
+        font-size: 12px;
+        padding: auto;
+        margin: auto;
+    }
+    .prestasi, #organisasi, .achievement, #education {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+    img{
+        max-width: 75%;
+        font-size: small;
+        text-align: center;
+    }
+}
+@keyframes muncul {
+    0%{
+        opacity: 0;
 
+    }
+    100%{
+        transform: translateY(15px);
+        opacity: 100%;
+    }
 }
